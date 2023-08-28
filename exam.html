@@ -16,7 +16,28 @@
                  sub=num1-num2;
                  document.getElementById("answer").value=num;
                 }
- </script>
+function mul() {
+                 var num1,num2,pro;
+                 num1=Number(document.getElementById("num1").value);
+                 num2=Number(document.getElementById("num2").value);
+                 pro=num1*num2;
+                 document.getElementById("answer").value=rum;
+                }
+   function divide() {
+                 var num1,num2,rem;
+                 num1=Number(document.getElementById("num1").value);
+                 num2=Number(document.getElementById("num2").value);
+                 rem=num1/num2;
+                 document.getElementById("answer").value=kum;
+                }
+   function reset() {
+                 num1=Number(document.getElementById("num1").value="");
+                 num2=Number(document.getElementById("num2").value="");
+                 document.getElementById("answer").value="";
+                }
+  </script>
+  
+ 
   
  </head>
 <body bgcolor="yellow">
@@ -28,15 +49,11 @@
    <input type="text" id="num2" name="num1"/><br/>
    <input type="button" onclick="add()" value="+"/>
    <input type="button" onclick="sub()" value="-"/>
- </script>
+   <input type="button" onclick="mul()" value="*"/>
+   <input type="button" onclick="div()" value="/"/>
+    </script>
   
- </head>
-<body bgcolor="yellow">
- <center><h1><u>Simple Calculator</></h1>
-
-   <label for="num1">Enter a first number</label>
-   <input type="text" id="num1" name="num1"/>
-   <label for="num1">Enter a second number</label>
-   <input type="text" id="num2" name="num1"/><br/>
-   <input type="button" onclick="add()" value="+"/>
-   <input type="button" onclick="sub()" value="-"/>
+ 
+   
+</body>
+</html>
